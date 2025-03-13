@@ -6,90 +6,125 @@
     <title>Muhammad Ateeb - CV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f0f;
             margin: 0;
             padding: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            max-width: 800px;
-            background: #fff;
-            margin: 50px auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
+            max-width: 900px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
             text-align: center;
         }
-        .contact {
+        .header {
             text-align: center;
-            margin-bottom: 20px;
+            padding: 30px;
+            background: #00adb5;
+            border-radius: 15px;
+            color: black;
         }
-        .contact a {
-            text-decoration: none;
-            color: #0073b1;
-            font-weight: bold;
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 5px solid white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 42px;
+            text-transform: uppercase;
+        }
+        .header h3 {
+            margin: 5px 0;
+            font-weight: 300;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
         }
-        .section h2 {
-            border-bottom: 2px solid #0073b1;
-            padding-bottom: 5px;
+        .section:hover {
+            transform: scale(1.03);
         }
-        .experience, .education, .achievements, .skills {
-            padding-left: 15px;
+        .summary {
+            margin-top: 15px;
         }
-        .experience p, .education p {
+        .experience {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .experience-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .experience-card h3 {
+            margin: 0 0 5px;
+            font-size: 20px;
+            color: #00adb5;
+        }
+        .experience-card p {
             margin: 5px 0;
+            font-size: 14px;
+            color: #ddd;
         }
         .skills ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .skills ul li {
-            display: inline-block;
-            background: #0073b1;
-            color: white;
-            padding: 5px 10px;
+            background: #00adb5;
+            color: #000;
+            padding: 10px 15px;
             margin: 5px;
             border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Muhammad Ateeb</h1>
-        <h3>CEO @Drifinity | GTM Strategist | 200+ Clients Served</h3>
-        
-        <div class="contact">
-            📍 Sargodha, Punjab, Pakistan<br>
-            ✉️ muhammadateeb17@gmail.com | 🔗 linkedin.com/in/sardar-ateeb-off00
+        <div class="header">
+            <img src="WhatsApp Image 2025-03-12 at 4.53.13 PM.jpeg" alt="Muhammad Ateeb">
+            <h1>Muhammad Ateeb</h1>
+            <h3>CEO @Drifinity | GTM Strategist | 200+ Clients Served</h3>
         </div>
         
         <div class="section summary">
             <h2>Summary</h2>
-            <p>I help businesses improve their market positioning, customer acquisition, and sales alignment. With experience working with over 60+ companies, I specialize in go-to-market strategies, brand development, digital growth, and tech support. My expertise spans across various industries, ensuring businesses have the right tools, strategies, and technical infrastructure to scale effectively. I’ve led multiple organizations and worked hands-on in web development, VFX, and technology solutions.</p>
+            <p>I help businesses improve their market positioning, customer acquisition, and sales alignment. With experience working with over 60+ companies, I specialize in go-to-market strategies, brand development, digital growth, and tech support.</p>
         </div>
         
         <div class="section experience">
             <h2>Experience</h2>
-            <p><strong>Drifinity – CEO</strong> (March 2024 – Present)</p>
-            <p>Leading a go-to-market strategy agency helping businesses improve their positioning and marketing efforts.</p>
-            
-            <p><strong>TechLogans – COO</strong> (Feb 2023 – Jan 2025)</p>
-            <p>Managed operations and strategic growth for a tech-focused company.</p>
-            
-            <p><strong>Softbitz – CEO</strong> (Sep 2023 – May 2024)</p>
-            <p>Led software development projects and digital strategy initiatives.</p>
-            
-            <p><strong>Freelancer</strong> (2018 – 2022)</p>
-            <p>Provided web development, branding, and marketing services to clients worldwide.</p>
-            
-            <p><strong>Canva Solutions</strong> (2019 – 2021)</p>
-            <p>WordPress Developer, Frontend Web Developer, Graphic Designer.</p>
+            <div class="experience">
+                <div class="experience-card"><h3>Drifinity – CEO</h3><p>March 2024 – Present</p><p>Leading a go-to-market strategy agency helping businesses improve their positioning and marketing efforts.</p></div>
+                <div class="experience-card"><h3>TechLogans – COO</h3><p>Feb 2023 – Jan 2025</p><p>Managed operations and strategic growth for a tech-focused company.</p></div>
+                <div class="experience-card"><h3>Softbitz – CEO</h3><p>Sep 2023 – May 2024</p><p>Led software development projects and digital strategy initiatives.</p></div>
+                <div class="experience-card"><h3>Freelancer</h3><p>2018 – 2022</p><p>Provided web development, branding, and marketing services to clients worldwide.</p></div>
+                <div class="experience-card"><h3>Canva Solutions</h3><p>2019 – 2021</p><p>Worked on website development, graphic design, and frontend solutions for various clients.</p></div>
+            </div>
         </div>
         
         <div class="section education">
@@ -98,10 +133,10 @@
         </div>
         
         <div class="section achievements">
-            <h2>Achievements in UOS</h2>
+            <h2>Achievements & Leadership</h2>
             <p>🏆 President, Techive Society (2024 – 2025)</p>
             <p>🎥 Videography Head, Graphics Management Society (2024 – 2025)</p>
-            <p>🎤 Speaker | Trainer, Skill Development Program (UOS) (2024)</p>
+            <p>🎤 Trainer, Career Development Program (UOS) (2024)</p>
         </div>
         
         <div class="section skills">
